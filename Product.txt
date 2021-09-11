@@ -1,0 +1,20 @@
+drop database productdb;
+create schema `productdb`;
+use `productdb`;
+
+create table product(prodid varchar(50) primary key, productname varchar(50),price double,stock integer,description varchar(100),image varchar(200),sellerid integer,category varchar(50),subcategory varchar(50),productrating integer);
+
+insert into product values('P1','Redmi i3',10000,50,'Core i3 11th Gen',"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1627962739.91643226.jpg",3,'Electronics','Laptop&Desktop',5);
+insert into product values('P2','Fogg',2000,300,'Analog Watch',"https://rukminim1.flixcart.com/image/880/1056/kerfl3k0pkrrdj/watch/2/5/r/1170-bl-br-fogg-original-imafvhvvagrufhkw.jpeg?q=50",4,'Fashion','Watches',5);
+insert into product values('P3','ZUAVI',3000,110,'Applique Poly Gerogette',"https://rukminim1.flixcart.com/image/880/1056/kqzj7gw0/dress/n/l/s/m-grey001-veehaus-original-imag4vsqygyyftfw.jpeg?q=50",5,'Gowns','Party Wears',4);
+
+
+select * from product;
+
+create table subscribedproduct(buyerid varchar(50),prodid varchar(50), primary key(buyerid,prodid),quantity integer);
+
+insert into subscribedproduct values('B1','P1',2);
+insert into subscribedproduct values('B2','P2',3);
+insert into subscribedproduct values('B3','P3',1);
+
+select * from subscribedproduct;
