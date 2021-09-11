@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: sruthi
+Build-Jdk: 16.0.1
+Implementation-Title: ProductService MS
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.shopping.onlineshopping.product
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/ProductMS
+Created-By: Maven Integration for Eclipse
+
