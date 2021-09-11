@@ -23,13 +23,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>8</java.version>
-		<sonar.host.url>${sonar.host.url}</sonar.host.url>
-                <sonar.organization>${sonar.organization}</sonar.organization>
-                <sonar.projectKey>${sonar.projectKey}</sonar.projectKey>
-                <sonar.login>${sonar.login}</sonar.login>
-                <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
-                <sonar.coverage.jacoco.xmlReportPaths>../report/site/jacoco/jacoco.xml
-                </sonar.coverage.jacoco.xmlReportPaths>
+		<sonar.projectKey>gitusername_reponame</sonar.projectKey>
+                <sonar.organization>sonarorganisaion_name</sonar.organization>
+                <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencyManagement>
